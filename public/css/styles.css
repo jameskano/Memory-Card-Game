@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #51B6D1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0;
+  height: 90vh;
+}
+
+.container {
+  width: 500px;
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 150px auto 100px;
+}
+
+.container h1 {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+label, .text, .start {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.text {
+  text-align: justify;
+}
+
+.username {
+  margin: 5px 0 10px;
+  height: 28px;
+  border: 1px solid #BFBFBF;
+}
+
+.username:focus {
+  outline: 0;
+}
+
+.start {
+  background-color: #516CD1;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 0;
+  border-radius: 3px;
+}
+
+.start:hover {
+  background-color: #233EA0;
+}
+
+.start:focus {
+  outline: 0;
+}
+
+.start:active {
+  transform: scale(0.95);
+}
+
+.score {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+.score a {
+  text-decoration: none;
+  color: #516CD1;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.error {
+  display: none;
+  font-size: 0.9rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.failure {
+  color: red;
+  display: block;
+}
+
+.cr {
+  position: fixed;
+  bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+}

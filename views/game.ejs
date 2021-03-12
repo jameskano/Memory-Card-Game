@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Memory Cards Game</title>
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="css/game.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Memory Card Game</h1>
+
+      <div class="deck">
+        <div class="card-container">
+          <div class="card">
+            <div class="front"><img class="" src="img/angul.png" alt=""></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front"><img class="" src="img/angul.png" alt=""></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front"><img class="" src="img/calla.png" alt=""></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front"><img class="" src="img/calla.png" alt=""></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front"><img class="" src="img/disci.png" alt=""></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front"><img class="" src="img/disci.png" alt=""></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front"><img class="" src="img/esse.png" alt=""></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front"><img class="" src="img/esse.png" alt=""></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front"><img class="" src="img/gresta.png" alt=""></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front"><img class="" src="img/gresta.png" alt=""></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front"><img class="" src="img/node.png" alt=""></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front"><img class="" src="img/node.png" alt=""></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front"><img class="" src="img/ora.png" alt=""></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front"><img class="" src="img/ora.png" alt=""></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front"><img class="" src="img/react.png" alt=""></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front"><img class="" src="img/react.png" alt=""></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front"><img class="" src="img/staice.png" alt=""></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front"><img class="" src="img/staice.png" alt=""></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front"><img class="" src="img/vvv.png" alt=""></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front"><img class="" src="img/vvv.png" alt=""></div>
+            <div class="back"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="cr">© 2021 Jaime Canovas. All rights reserved.</p>
+
+    <!-- Error message -->
+    <div class="error-info">
+      <p>Cards do not match</p>
+    </div>
+
+    <!-- Final results -->
+    <div class="win-info">
+      <p>You've won!</p>
+    </div>
+
+    <div class="score">
+      <h1 class="score-title">Final Results</h1>
+
+      <div class="time">
+        <p class="title">TIME:</p>
+        <p class="result"></p>
+      </div>
+      <div class="errors">
+        <p class="title">ERRORS:</p>
+        <p class="result"></p>
+      </div>
+
+      <p class="return"><a href="/">Return Home</a></p>
+    </div>
+
+    <div class="background"></div>
+
+    <script src="js/game.js" charset="utf-8"></script>
+  </body>
+</html>
