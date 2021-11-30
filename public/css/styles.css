@@ -26,24 +26,25 @@ body {
 
 .container h1 {
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
-}
-
-label, .text, .start {
-  font-size: 1.2rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Itim', cursive;
 }
 
 .text {
   text-align: justify;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .username {
   margin: 5px 0 10px;
-  height: 28px;
+  height: 40px;
   border: 1px solid #BFBFBF;
+  border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  padding-left: 10px;
 }
 
 .username:focus {
@@ -55,8 +56,12 @@ label, .text, .start {
   color: white;
   border: none;
   cursor: pointer;
-  padding: 5px 0;
-  border-radius: 3px;
+  padding: 10px 0;
+  border-radius: 5px;
+  transition: 0.2s;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
 }
 
 .start:hover {
@@ -74,14 +79,19 @@ label, .text, .start {
 .score {
   text-align: center;
   margin-top: 50px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .score a {
   text-decoration: none;
   color: #516CD1;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
+  transition: 0.2s;
+}
+
+.score a:hover {
+  color: #233EA0;
 }
 
 .error {
@@ -100,4 +110,28 @@ label, .text, .start {
   bottom: 10px;
   font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
+}
+
+
+/* Media queries */
+
+@media (max-width: 600px) {
+  body {
+    height: auto;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .container h1 {
+    margin-top: 50px;
+    font-size: 2rem;
+  }
+
+  .name-container {
+    width: 100%;
+    margin: 120px auto 75px;
+  }
 }

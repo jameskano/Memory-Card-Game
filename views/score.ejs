@@ -15,14 +15,16 @@
   </head>
   <body>
     <div class="container">
-      <p class="return"><a href="/">Return</a></p>
-
       <% results.forEach(function(data) { %>
         <div class="score-container">
           <p><%= data.name %></p><p><%= data.time %>sec</p><p>errors: <%= data.mistakes %></p>
         </div>
       <% }) %>
     </div>
+
+    <div class="footer-background"></div>
+
+    <a class="return" href="/">MENU</a>
 
     <p class="cr">© 2021 Jaime Canovas. All rights reserved.</p>
   </body>

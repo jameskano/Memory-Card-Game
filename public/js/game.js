@@ -5,9 +5,13 @@ let initialTime = Date.now();
 let errors = 0;
 
 // Display cards randomly
-for(let i = $(".deck").children().length; i >= 0; i--) {
-  $(".deck").append($(".deck").children()[Math.random() * i | 0]);
+function displayCards() {
+  for(let i = $(".deck").children().length; i >= 0; i--) {
+    $(".deck").append($(".deck").children()[Math.random() * i | 0]);
+  }
 }
+
+displayCards();
 
 // Flip card animation
 $(".card-container").each(function() {
@@ -73,4 +77,34 @@ function checkCards() {
       // }, 2000);
     }
   }
+}
+
+// Menu and restart buttons listeners
+$('.restart-btn').click(() => {
+  initialTime = Date.now();
+  errors = 0;
+
+  $(".card-container").each(function() {
+        if($(this).hasClass("animation")) {
+          $(this).removeClass("animation");
+          $(this).removeClass("selected");
+        }
+  });
+
+  displayCards();
+});
+
+$('.menu-btn').click(() => {
+  localStorage.setItem("usernameMemGame", '');
+  location.href = '/';
+});
+
+
+// Redirect to home when name on localStorage is empty
+if(localStorage.getItem('usernameMemGame') === '') {
+  $('.need-name').show(300);
+
+  setTimeout(() => {
+    location.href = '/';
+  }, 2000);
 }
